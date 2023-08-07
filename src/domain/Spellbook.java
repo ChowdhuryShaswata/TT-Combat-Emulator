@@ -15,4 +15,12 @@ public class Spellbook {
     public List<Spell> getSpells() {
         return spells;
     }
+
+    /**
+     * Add spells to this spellbook.
+     * @param spell
+     */
+    public void addSpell(Spell spell){
+        spells.add(spell);
+    }
 }

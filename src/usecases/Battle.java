@@ -6,6 +6,10 @@ import domain.Character;
 import java.lang.reflect.Array;
 import java.util.*;
 
+/**
+ * Represents a simulated battle scenario in a tabletop RPG.
+ * This class orchestrates the combat interactions between characters.
+ */
 public class Battle implements CombatInputBoundary{
     private List<Character> characters;
     private int roundNumber;
@@ -16,6 +20,13 @@ public class Battle implements CombatInputBoundary{
 
     private boolean battleIsOver;
 
+    /**
+     * Initializes a new instance of the Battle class.
+     *
+     * @param characters List of characters participating in the battle.
+     * @param presenter The presenter to display information to the user.
+     * @param stringResourceProvider The provider for string resources.
+     */
     public Battle(List<Character> characters, CombatOutputBoundary presenter, StringResourceProvider stringResourceProvider) {
         this.characters = characters;
         this.roundNumber = 1;
@@ -29,6 +40,9 @@ public class Battle implements CombatInputBoundary{
         this.battleIsOver = battleIsOver;
     }
 
+    /**
+     * Starts the battle scenario, executing combat turns for each character.
+     */
     public void startBattle() {
         presenter.displayMessage(stringResourceProvider.getBattleStarts());
         initializeCharacters();
@@ -144,15 +158,4 @@ public class Battle implements CombatInputBoundary{
         }
         return null;
     }
-
-    public static void main(String[] args) {
-        // Create a list of characters for the battle scenario
-//        List<Character> characters = new ArrayList<>();
-//        characters.add(new Human("Warrior", 1, new Spellbook(/*...*/)));
-//        characters.add(new Orc("Brute", 1, new Spellbook(/*...*/)));
-//
-//        Battle battle = new Battle(characters);
-//        battle.startBattle();
-    }
 }
-

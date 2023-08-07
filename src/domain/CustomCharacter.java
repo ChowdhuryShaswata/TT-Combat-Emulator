@@ -29,4 +29,3 @@ public class CustomCharacter extends Character {
         this.attackPoints = customAbilityModifier;
     }
 }
-

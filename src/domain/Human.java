@@ -5,7 +5,6 @@ public class Human extends Character {
         super(name, level, spellbook);
         initializeStats();
     }
-
     @Override
     public void initializeStats() {
         this.maxHealth = 20;
