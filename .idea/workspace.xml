@@ -5,17 +5,36 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1537e8f6-dac2-460e-9f65-ae1622f4dcda" name="Changes" comment="Domain classes implemented.">
-      <change afterPath="$PROJECT_DIR$/src/adapters/CombatController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/adapters/CombatPresenter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/adapters/DefaultStringResourceProvider.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/frameworks/StringResource.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/usecases/Battle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/usecases/CombatInputBoundary.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/usecases/CombatOutputBoundary.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/usecases/StringResourceProvider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/adapters/CharacterCreationController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/adapters/CharacterCreationPresenter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/adapters/ConsoleCharacterCreationController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/adapters/ConsoleCharacterCreationPresenter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/domain/Archetype.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/domain/DruidArchetype.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/domain/PaladinArchetype.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/usecases/CharacterFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/usecases/HumanCharacterFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/usecases/OrcCharacterFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/domain/CharacterFactoryTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/domain/Character.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/domain/Character.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/adapters/CombatController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/adapters/CombatController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/adapters/CombatPresenter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/adapters/CombatPresenter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/adapters/DefaultStringResourceProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/adapters/DefaultStringResourceProvider.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/domain/CustomCharacter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/domain/CustomCharacter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/domain/DiceRoller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/domain/DiceRoller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/domain/Die.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/domain/Die.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/domain/Human.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/domain/Human.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/domain/Orc.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/domain/Orc.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/domain/Spellbook.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/domain/Spellbook.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/frameworks/StringResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/frameworks/StringResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/usecases/Battle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/usecases/Battle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/usecases/CharacterService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/usecases/CharacterService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/usecases/CombatInputBoundary.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/usecases/CombatInputBoundary.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/usecases/CombatOutputBoundary.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/usecases/CombatOutputBoundary.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/usecases/StringResourceProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/usecases/StringResourceProvider.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/domain/CharacterTest.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,6 +52,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="ProjectId" id="2TcrB2fpgpbxs6wbQaHHarlxgvC" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -51,6 +71,7 @@
     "Repository.Attach.Sources": "false",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
@@ -59,12 +80,16 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "run.code.analysis.last.selected.profile": "pProject Default",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="usecases" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
       <recent name="domain" />
@@ -78,11 +103,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DiceRollerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CharacterFactoryTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TT-Combat-Emulator" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="domain.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="domain" />
+      <option name="MAIN_CLASS_NAME" value="domain.CharacterFactoryTests" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DiceRollerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TT-Combat-Emulator" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="usecases.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -97,7 +137,7 @@
       <module name="TT-Combat-Emulator" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="domain.*" />
+          <option name="PATTERN" value="usecases.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -111,6 +151,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.CharacterFactoryTests" />
         <item itemvalue="JUnit.SpellTest" />
         <item itemvalue="JUnit.DiceRollerTest" />
       </list>

@@ -11,7 +11,6 @@ public class DiceRoller {
         for (int i = 0; i < numDice; i++) {
             sum += die.roll();
         }
-
         return sum;
     }
 }

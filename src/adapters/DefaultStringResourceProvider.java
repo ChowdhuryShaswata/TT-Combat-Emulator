@@ -58,5 +58,24 @@ public class DefaultStringResourceProvider implements StringResourceProvider {
     public String getInvalidTarget() {
         return StringResource.INVALID_TARGET;
     }
-}
 
+    @Override
+    public String getNamePrompt() {
+        return StringResource.NAME_PROMPT;
+    }
+
+    @Override
+    public String getRacePrompt() {
+        return StringResource.RACE_PROMPT;
+    }
+
+    @Override
+    public String getLevelPrompt() {
+        return StringResource.LEVEL_PROMPT;
+    }
+
+    @Override
+    public String getArchetypePrompt() {
+        return StringResource.ARCHETYPE_PROMPT;
+    }
+}

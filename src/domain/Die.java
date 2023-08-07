@@ -8,7 +8,6 @@ public class Die {
         this.sides = sides;
         this.random = new Random();
     }
-
     public int roll() {
         return random.nextInt(sides) + 1;
     }

@@ -11,7 +11,9 @@ public interface StringResourceProvider {
     String getTypeSpellName();
     String getInvalidSpell();
     String getBattleEnds();
-
     String getInvalidTarget();
+    String getNamePrompt();
+    String getRacePrompt();
+    String getLevelPrompt();
+    String getArchetypePrompt();
 }
-
