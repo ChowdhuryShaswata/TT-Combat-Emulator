@@ -105,4 +105,12 @@ public abstract class Character {
         this.health = Math.min(this.health + amount, this.maxHealth);
         System.out.println(this.name + " is healed for " + amount + " HP.");
     }
+
+    public boolean isAlive(){
+        if(health > 0){
+            return true;
+        } else{
+            return false;
+        }
+    }
 }
