@@ -1,6 +1,6 @@
 package domain;
 
-import java.util.List;
+import java.util.*;
 
 public class Spellbook {
     private List<Spell> spells;
@@ -8,9 +8,11 @@ public class Spellbook {
     public Spellbook(List<Spell> spells) {
         this.spells = spells;
     }
+    public Spellbook() {
+        this.spells = new ArrayList<Spell>();
+        };
 
     public List<Spell> getSpells() {
         return spells;
     }
-
 }

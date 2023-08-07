@@ -1,15 +1,17 @@
 package domain;
 
-public class Character {
+public abstract class Character {
     private String name;
-    private int healthPoints;
-    private int attackPoints;
+//    private int healthPoints;
+    protected int attackPoints;
     private int level;
-    private int health;
-    private int maxHealth;
-    private int mana;
-    private int maxMana;
-    private int armourClass;
+    protected int health;
+    protected int maxHealth;
+    protected int mana;
+    protected int maxMana;
+    protected int armourClass;
+    protected int abilityModifier;
+    private Spellbook spellbook;
 
     public int getHealth() {
         return health;
@@ -31,20 +33,25 @@ public class Character {
         return spellbook;
     }
 
-    private int abilityModifier;
-    private Spellbook spellbook;
+//    public Character(String name, int level, int health, int maxHealth, int mana, int maxMana, int armourClass, int abilityModifier, Spellbook spellbook) {
+//        this.name = name;
+//        this.level = level;
+//        this.health = health;
+//        this.maxHealth = maxHealth;
+//        this.mana = mana;
+//        this.maxMana = maxMana;
+//        this.armourClass = armourClass;
+//        this.abilityModifier = abilityModifier;
+//        this.spellbook = spellbook;
+//    }
 
-    public Character(String name, int level, int health, int maxHealth, int mana, int maxMana, int armourClass, int abilityModifier, Spellbook spellbook) {
+    public Character(String name, int level, Spellbook spellbook) {
         this.name = name;
         this.level = level;
-        this.health = health;
-        this.maxHealth = maxHealth;
-        this.mana = mana;
-        this.maxMana = maxMana;
-        this.armourClass = armourClass;
-        this.abilityModifier = abilityModifier;
         this.spellbook = spellbook;
     }
+
+    public abstract void initializeStats();
 
     // Getters and setters as needed
 
@@ -62,13 +69,13 @@ public class Character {
         return name;
     }
 
-    public int getHealthPoints() {
-        return healthPoints;
-    }
-
-    public void setHealthPoints(int healthPoints) {
-        this.healthPoints = healthPoints;
-    }
+//    public int getHealthPoints() {
+//        return healthPoints;
+//    }
+//
+//    public void setHealthPoints(int healthPoints) {
+//        this.healthPoints = healthPoints;
+//    }
 
     public int getAttackPoints() {
         return attackPoints;
@@ -86,16 +93,14 @@ public class Character {
             System.out.println(this.name + " misses the attack!");
         }
     }
-
     public void takeDamage(int damage) {
-        this.healthPoints -= damage;
-        if (this.healthPoints <= 0) {
+        this.health -= damage;
+        if (this.health <= 0) {
             System.out.println(this.name + " has been defeated!");
         } else {
             System.out.println(this.name + " takes " + damage + " damage.");
         }
     }
-
     public void heal(int amount) {
         this.health = Math.min(this.health + amount, this.maxHealth);
         System.out.println(this.name + " is healed for " + amount + " HP.");

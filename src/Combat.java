@@ -14,9 +14,9 @@ public class Combat {
 
     public void start() {
         System.out.println("Combat begins!");
-        while (player.getHealthPoints() > 0 && enemy.getHealthPoints() > 0) {
+        while (player.getHealth() > 0 && enemy.getHealth() > 0) {
             playerTurn();
-            if (enemy.getHealthPoints() > 0) {
+            if (enemy.getHealth() > 0) {
                 enemyTurn();
             }
         }

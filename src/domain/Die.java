@@ -1,7 +1,5 @@
 package domain;
-
 import java.util.Random;
-
 public class Die {
     private int sides;
     private Random random;
@@ -15,4 +13,3 @@ public class Die {
         return random.nextInt(sides) + 1;
     }
 }
-

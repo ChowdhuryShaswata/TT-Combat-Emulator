@@ -4,17 +4,30 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1537e8f6-dac2-460e-9f65-ae1622f4dcda" name="Changes" comment="">
+    <list default="true" id="1537e8f6-dac2-460e-9f65-ae1622f4dcda" name="Changes" comment="Adjusted functionality to follow SOLID principles.">
+      <change afterPath="$PROJECT_DIR$/lib/apiguardian-api-1.1.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/junit-jupiter-5.8.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/junit-jupiter-api-5.8.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/junit-jupiter-engine-5.8.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/junit-jupiter-params-5.8.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/junit-platform-commons-1.8.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/junit-platform-engine-1.8.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/opentest4j-1.2.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/domain/CustomCharacter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/domain/Human.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/domain/Orc.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/domain/CharacterTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/domain/DiceRollerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/domain/SpellTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TT-Combat-Emulator.iml" beforeDir="false" afterPath="$PROJECT_DIR$/TT-Combat-Emulator.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Combat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Combat.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/domain/Character.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/domain/Character.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/domain/DiceRoller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/domain/DiceRoller.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/domain/Die.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/domain/Die.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/domain/OffenseSpell.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/domain/OffenseSpell.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/domain/RecoverySpell.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/domain/RecoverySpell.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/domain/Spell.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/domain/Spell.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/domain/Spellbook.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/domain/Spellbook.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/usecases/CharacterService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/usecases/CharacterService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,6 +37,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="JUnit5 Test Class" />
         <option value="Class" />
       </list>
     </option>
@@ -32,16 +46,25 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="2TcrB2fpgpbxs6wbQaHHarlxgvC" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Downloaded.Files.Path.Enabled": "true",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -49,6 +72,52 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="domain" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.SpellTest">
+    <configuration name="DiceRollerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TT-Combat-Emulator" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="domain.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="domain" />
+      <option name="MAIN_CLASS_NAME" value="domain.DiceRollerTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpellTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TT-Combat-Emulator" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="domain.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="domain" />
+      <option name="MAIN_CLASS_NAME" value="domain.SpellTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.SpellTest" />
+        <item itemvalue="JUnit.DiceRollerTest" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -57,11 +126,24 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1691353071060</updated>
-      <workItem from="1691353072224" duration="5275000" />
+      <workItem from="1691353072224" duration="9797000" />
     </task>
+    <task id="LOCAL-00001" summary="Adjusted functionality to follow SOLID principles.">
+      <created>1691363874425</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1691363874425</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Adjusted functionality to follow SOLID principles." />
+    <option name="LAST_COMMIT_MESSAGE" value="Adjusted functionality to follow SOLID principles." />
   </component>
 </project>

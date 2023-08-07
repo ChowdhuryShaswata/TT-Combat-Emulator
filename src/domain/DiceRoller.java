@@ -1,5 +1,4 @@
 package domain;
-
 public class DiceRoller {
     public static int rollDice(String diceNotation) {
         int sum = 0;

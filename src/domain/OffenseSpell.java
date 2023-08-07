@@ -18,4 +18,3 @@ public class OffenseSpell extends Spell {
         target.takeDamage(damage);
     }
 }
-
